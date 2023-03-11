@@ -1,0 +1,28 @@
+
+
+
+
+    <label for="name">Cat name:</label>
+        <input type="text" id='name' name='cat[name]' value='<%= cat.name %>'>
+    <br>
+    <label for="sex">Cat sex:</label>
+        <label for="sex">M:</label>
+            <input type="radio" name="cat[sex]" id="sex" value='<%= :M %>'>
+        <label for="sex">F:</label>
+            <input type="radio" name="cat[sex]" id="sex" value='<%= :F %>'>
+    <br>
+    <label for="color">Cat color:</label>
+        <select name="cat[color]" id="color" value='<%= cat.color %>'>
+            <option value="brown">brown</option>
+            <option value="black">black</option>
+            <option value="white">white</option>
+            <option value="orange">orange</option>
+        </select>
+    <br>
+    <label for="birth_date">Cat birthday:</label>
+        <input type="date" name="cat[birth_date]" id="birth_date" value='<%= cat.birth_date %>'>
+    <br>
+    <label for="description">Cat description:</label>
+        <input type="textarea" name="cat[description]" id="description" value='<%= cat.description %>'>
+    <br>
+    <br>

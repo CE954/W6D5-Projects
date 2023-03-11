@@ -1,7 +1,6 @@
 <h1>Create a cat!</h1>
 
 <form action="<%= cats_url %>" method='POST'>
-    <input type="text" id='name' name='cat[name]' value='<%= @cat.name %>'>
-
-
+    <%= render 'form', cat: @cat %>
+    <input type="submit" value="Create Cat">
 </form>
